@@ -106,3 +106,92 @@
 
 
 // Pattern 7
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter a number: ";
+//     cin>>n;
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<i+1;j++){
+//             cout<<i+1;
+//         }
+//         cout<<endl;
+//     }
+// return 0;
+// }
+
+
+// Pattern 8
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     char ch='A';
+//     int n;
+//     cout<<"Enter a number: ";
+//     cin>>n;
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<i+1;j++){
+//             cout<<ch;
+//         }
+//         ch=ch+1;
+//         cout<<endl;
+//     }
+// return 0;
+// }
+
+
+// Pattern 9 Triangle Pattern
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter a number:";
+//     cin>>n;
+//     for(int i=0;i<n;i++){
+//         for(int j=1;j<=i+1;j++){
+//             cout<<j;
+//         }
+//         cout<<endl;
+//     }
+// return 0;
+// }
+
+
+// Pattern 10 Reverse Triangle Pattern
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter a number: ";
+//     cin>>n;
+//     for(int i=0;i<=n-1;i++){
+//         for(int j=i+1;j>0;j--){
+//             cout<<j;
+//         }
+//         cout<<endl;
+//     }
+// return 0;
+// }
+
+
+// Pattern 11 Floyd's Triangle Pattern
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     int nums=1;
+//     cout<<"Enter a number:";
+//     cin>>n;
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<i+1;j++){
+//             cout<<nums<<" ";
+//             nums+=1;
+//         }
+//         cout<<endl;
+//     }
+// return 0;
+// }
+
+
+// Pattern 12
