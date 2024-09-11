@@ -194,10 +194,66 @@
 // }
 
 
-// Pattern 12
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    
-return 0;
-}
+// Pattern 12 Reverse Triangle Pattern
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter a number: ";
+//     cin>>n;
+//     for(int i=0;i<n;i++){
+//         for(int j=i+1;j>0;j--){
+//             cout<<j;
+//         }
+//         cout<<endl;
+//     }
+// return 0;
+// }
+
+
+// Pattern 13 Inverted Triangle Pattern
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n,i,j;
+//     cout<<"Enter a number:";
+//     cin>>n;
+        // Spaces
+//     for(i=0;i<n;i++){
+//         for(j=0;j<i;j++){
+//             cout<<" ";
+//         }
+        //number 
+//     for(j=0;j<n-i;j++){
+//         cout<<i+1<<" ";
+//     }
+//     cout<<endl;
+//     }
+// return 0;
+// }
+
+
+// Pattern 14 Pyramid Pattern
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter a number:";
+//     cin>>n;
+//     //spaces
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<n-i-1;j++){
+//             cout<<" ";
+//         }
+//     //num1
+//         for(int j=1;j<=i+1;j++){
+//             cout<<j;
+//         }
+//     //num2
+//     for(int j=i;j>=1;j--){
+//         cout<<j;
+//     }
+//     cout<<endl;
+//     }
+// return 0;
+// }
