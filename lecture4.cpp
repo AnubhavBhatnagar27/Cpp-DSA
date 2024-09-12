@@ -305,35 +305,79 @@
 
 
 // Pattern 16 Butterfly Pattern
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//         int n;
+//         cout<<"Enter a number: ";
+//         cin>>n;
+//         for(int i=0;i<n;i++){
+//                 // Part 1
+//                 for(int j=0;j<=i;j++){
+//                         cout<<"*";
+//                 }
+//                 cout<<endl;
+//         }
+//         //Part 2
+//         for(int i=n;i>=1;i--){
+//                 for(int j=1;j<=i;j++){
+//                         cout<<"*";
+//                 }
+//                 cout<<endl;
+//         }
+//         //Part 3
+//         for(int i=0;i<n;i++){
+//                 for(int i, j=0;j<n-i;j++){
+//                         cout<<" ";
+//                 }
+                
+//         cout<<"*";
+//         //Part 4
+//         }
+//         cout<<endl;
+// return 0;
+// }
+
+
+// Pattern 17
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//         for(int i=0;i<3;i++){
+//                 for(int j=0;j<3;j++){
+//                         if(i==1 || j==1){
+//                                 cout<<"*";
+//                         }
+//                         else{
+//                                 cout<<" ";
+//                         }
+//                         // cout<<"*";
+//                 }
+//                 cout<<endl;
+//         }
+// return 0;
+// }
+
+
+// Pattern 18
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-        int n;
-        cout<<"Enter a number: ";
-        cin>>n;
-        for(int i=0;i<n;i++){
-                // Part 1
+        for(int i=0;i<3;i++){
                 for(int j=0;j<=i;j++){
+                        if(j==2){
+                                cout<<"2";
+                                break;
+                        }
                         cout<<"*";
                 }
                 cout<<endl;
         }
-        //Part 2
-        for(int i=n;i>=1;i--){
-                for(int j=1;j<=i;j++){
+        for(int i=2;i>=1;i--){
+                for(int j=i;j>=1;j--){
                         cout<<"*";
                 }
                 cout<<endl;
         }
-        //Part 3
-        for(int i=0;i<n;i++){
-                for(int i, j=0;j<n-i;j++){
-                        cout<<" ";
-                }
-                
-        cout<<"*";
-        //Part 4
-        }
-        cout<<endl;
 return 0;
 }
