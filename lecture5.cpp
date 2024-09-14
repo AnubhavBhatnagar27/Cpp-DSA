@@ -55,7 +55,7 @@
 //     if(n<=1) return false;
 //     if(n<=3 && n>1) return true;
 //     if (n % 2 == 0 || n % 3 == 0) return false;
-//     for(int i=5;i*1<=n-1;i++){
+//     for(int i=5;i*i<=n-1;i++){
 //         if(n%i==0){
 //             return false;
 //         }
@@ -63,7 +63,6 @@
 //             return true;
 //         }
 //     }
-//     return 0;
 // }
 // int main(){
 //     int n;
@@ -77,3 +76,55 @@
 //     }
 // return 0;
 // }
+
+
+// WAF to print all prime numbers from 1 to N 
+// #include<bits/stdc++.h>
+// using namespace std;
+// bool prime(int n){
+//     if(n<=1) return false;
+//     if (n % 2 == 0 || n % 3 == 0) return false;
+//     for(int i=5;i*i<=n-1;i++){
+//         if(n%i==0){
+//             return false;
+//         }
+//         else{
+//             return true;
+//         }
+//     }
+// }
+// int main(){
+//     int N;
+//     cout<<"Enter a number: ";
+//     cin>>N;
+//     for(int i=1;i<=N;i++){
+//         if(prime(i)){
+//             cout<<i<<" ";
+//         }
+//     }
+//     if(prime(N)==false){
+//         cout<<"No Prime Numbers available";
+//     }
+// return 0;
+// }
+
+
+// WAP to print nth fibonacci
+#include<iostream>
+using namespace std;
+int main() {
+    int a=0,b=1,c,n,i=0;
+    cout<<"Enter the number of terms to be displayed: ";
+    cin>>n;
+    cout<<"FIBONACCI SERIES"<<endl;
+    cout<<a<<"\t"<<b;
+    while(i<=n){
+        c = a + b;
+        cout<<"\t"<<c;
+        a=b;
+        b=c;
+        i++;
+    }
+
+return 0;
+}
