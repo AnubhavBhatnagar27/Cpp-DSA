@@ -1,3 +1,4 @@
+// Sum of all odd numbers from 1 to n
 #include<iostream>
 using namespace std;
 int main(){
