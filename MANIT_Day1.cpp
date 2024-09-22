@@ -70,20 +70,62 @@
 // };
 
 // Best Approach
-class Solution {
-public:
-    vector<int> productExceptSelf(vector<int>& nums) {
-        int n = nums.size();
-        vector<int> output(n);
-        output[0] = 1;
-        for(int i=1; i<n; i++){
-            output[i] = output[i-1] * nums[i-1];
-        }
-        int right = 1;
-        for(int i=n-1; i>=0; i--){
-            output[i] *= right;
-            right *= nums[i];
-        }
-        return output;
-    }
-};
+// class Solution {
+// public:
+//     vector<int> productExceptSelf(vector<int>& nums) {
+//         int n = nums.size();
+//         vector<int> output(n);
+//         output[0] = 1;
+//         for(int i=1; i<n; i++){
+//             output[i] = output[i-1] * nums[i-1];
+//         }
+//         int right = 1;
+//         for(int i=n-1; i>=0; i--){
+//             output[i] *= right;
+//             right *= nums[i];
+//         }
+//         return output;
+//     }
+// };
+
+// 735
+// My Error
+// class Solution {
+// public:
+//     vector<int> asteroidCollision(vector<int>& asteroids) {
+//         stack<int> s;
+//         for(int i=0;i<asteroids.size();i++){
+//             if(asteroids[i]>0) s.push()
+//             if(s.first()<0 && asteroids[i]<0) s.push()
+//             // if(s.top()>0 && asteroids[i]<0 && )
+//             if(s.top()==asteroids[i]) s.empty();
+//         }
+//     }
+// };
+
+// Sir Solution
+// class Solution {
+// public:
+//     vector<int> asteroidCollision(vector<int>& asteroids) {
+//         stack<int> s;
+//         for(int a:asteroids){
+//             if(a>0) s.push(a);
+//             else{
+//                 while(!s.empty() && s.top()<abs(a) && s.top()>0){
+//                     s.pop();
+//                 }
+//                 if(s.empty() || s.top()<0) s.push(a);
+//                 if(s.top()==abs(a)) s.pop();
+//             }
+//         }
+//         vector<int> ans;
+//         while(!s.empty()){
+//             ans.push_back(s.top());
+//             s.pop();
+//         }
+//         reverse(ans.begin(),ans.end());
+//         return ans;
+//     }
+// };
+
+// 895
