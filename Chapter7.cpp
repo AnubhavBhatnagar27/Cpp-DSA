@@ -104,4 +104,10 @@ int main(){
 return 0;
 }
 
-// WAF ato reverse an integer n
+// WAF to reverse an integer n
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    cout<<"Hello World"<<endl;
+return 0;
+}
