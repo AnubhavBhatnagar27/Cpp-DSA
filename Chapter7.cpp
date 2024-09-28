@@ -87,27 +87,42 @@
 // }
 
 // Figure out how to find if a number is power of 2 without any loop.
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    int n;
-    cout<<"Enter a number:";
-    cin>>n;
-    int pow=1;
-    while(pow<n){
-        pow<<=1;
-    }
-    return pow==n;
-    if(pow==n){
-        cout<<"The number is of power of 2";
-    }
-return 0;
-}
+// #include<bits/stdc++.h>
+// using namespace std;
+// bool isPowerOfTwo(int n) {
+//     return n > 0 && (n & (n - 1)) == 0;
+// }
+// int main(){
+//     int n;
+//     cout<<"Enter a number:";
+//     cin>>n;
+//     if (isPowerOfTwo(n)) {
+//         cout << n << " is a power of 2." << std::endl;
+//     } else {
+//         cout << n << " is not a power of 2." << std::endl;
+//     }
+    
+// return 0;
+// }
 
 // WAF to reverse an integer n
 #include<bits/stdc++.h>
 using namespace std;
+int rev(int n){
+    int t=0,rev=0;
+    while(n!=0){
+        t=n%10;
+        n/=10;
+        rev=rev*10+t;
+    }
+    return rev;
+}
 int main(){
-    cout<<"Hello World"<<endl;
+    int n;
+    cout<<"Enter a number:";
+    cin>>n;
+    cout<<"Reversed Number is:"<<rev(n)<<endl;
+
+    
 return 0;
 }
